@@ -1,4 +1,4 @@
-name: Portfolio/ Deploy static site to GitHub Pages.
+name: Portfolio / Deploy static site to GitHub Pages
 
 on:
   push:
@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
