@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Селезнев Алексей — Middle Frontend (Vue.js)</title>
+    <meta
+      name="description"
+      content="Портфолио Middle Frontend (Vue.js) разработчика: опыт, достижения и навыки"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="bg-orb bg-orb--pink"></span>
+      <span class="bg-orb bg-orb--teal"></span>
+      <span class="bg-orb bg-orb--violet"></span>
+    </div>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__core"></span>
+      <span class="cursor__glitch"></span>
+    </div>
+    <header class="site-header" id="top">
+      <button class="sidebar__toggle sidebar__toggle--floating" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="sidebar sidebar--right" data-sidebar>
+        <a class="logo" href="#top">
+          <span class="logo__glow">
+            <img
+              src="images/me.webp"
+              srcset="images/me.webp 1x, images/me@2x.webp 2x"
+              alt="Логотип"
+              loading="lazy"
+            />
+          </span>
+          <span class="logo__text">Селезнев Алексей</span>
+        </a>
+        <span class="nav-role">Middle Frontend (Vue)</span>
+        <nav class="sidebar__nav">
+          <a href="#hero" class="nav__link">Главная</a>
+          <a href="#skills" class="nav__link">Навыки</a>
+          <a href="#projects" class="nav__link">Проекты</a>
+          <a href="#architecture" class="nav__link">Архитектура</a>
+          <a href="#leadership" class="nav__link">Лидерство</a>
+          <a href="#experience" class="nav__link">Опыт</a>
+          <a href="#education" class="nav__link">Образование</a>
+          <a href="#uni-projects" class="nav__link">Университет</a>
+          <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+        <a href="#contacts" class="btn btn--primary nav__cta">Связаться</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero reveal">
+        <div class="container hero__content" data-parallax-root>
+          <div class="hero__text" data-parallax="text">
+            <p class="eyebrow hover-glow">Портфолио</p>
+            <h1 class="title hover-glow">
+              Селезнев Алексей
+              <span class="title__accent hover-glow">Middle Frontend (Vue.js)</span>
+            </h1>
+            <p class="subtitle hover-glow hero__subtitle">
+              Middle Frontend (Vue.js) разработчик с 3 годами опыта в разработке
+              высоконагруженных банковских систем.<br />
+              Специализируюсь на автоматизации бизнес-процессов и создании надёжных
+              веб-платформ для кредитования.<br />
+              Активно взаимодействую с бизнес-заказчиками для проработки требований
+              и часто выступаю в роли технического лидера внутри команды.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#contacts">Связаться</a>
+              <a class="btn btn--ghost" href="#experience">Смотреть опыт</a>
+            </div>
+          </div>
+          <div class="hero__card hero__card--resume" data-parallax="orb" data-tilt-card>
+            <div class="hero__card-top" data-tilt-layer="0.3">
+              <span class="status-dot"></span>
+              <span>Краткое резюме</span>
+            </div>
+            <div class="resume-card" data-tilt-layer="0.8">
+              <div class="resume-card__header">
+                <div class="resume-card__photo" data-tilt-layer="1.2">
+                  <img
+                    src="images/me.webp"
+                    srcset="images/me.webp 1x, images/me@2x.webp 2x"
+                    alt="Селезнев Алексей"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="resume-card__identity">
+                  <h3 data-tilt-layer="1">Селезнев Алексей</h3>
+                  <p data-tilt-layer="0.7">Middle Frontend (Vue.js)</p>
+                </div>
+              </div>
+              <div class="resume-card__section" data-tilt-layer="0.9">
+                <h4>Образование</h4>
+                <p>НГУ, 2021–2025</p>
+              </div>
+              <div class="resume-card__section" data-tilt-layer="0.85">
+                <h4>Навыки</h4>
+                <div class="resume-card__chips">
+                  <span>Архитектурное мышление</span>
+                  <span>Работа со сложной бизнес-логикой</span>
+                  <span>Ответственность за технические решения</span>
+                  <span>Коммуникация с бизнесом</span>
+                </div>
+              </div>
+              <div class="resume-card__section" data-tilt-layer="0.75">
+                <h4>Основной стек</h4>
+                <div class="resume-card__chips resume-card__chips--muted">
+                  <span>Vue</span>
+                  <span>TypeScript</span>
+                  <span>JavaScript</span>
+                  <span>Vite</span>
+                  <span>Pinia</span>
+                  <span>Vue Router</span>
+                </div>
+              </div>
+            </div>
+            <p class="hero__note" data-tilt-layer="0.6">Открыт к сложным задачам и архитектурным вызовам.</p>
+          </div>
+</div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Матрица компетенций</h2>
+            <p class="section__subtitle">
+              Ключевые направления экспертизы и влияние на продукт.
+            </p>
+          </div>
+          <div class="competency-matrix">
+            <article class="card competency-card">
+              <div class="competency-card__head">
+                <span class="competency-card__glow"></span>
+                <h3>Архитектура и системное мышление</h3>
+              </div>
+              <ul class="competency-card__list">
+                <li>Проектирование и внедрение MVC-архитектуры на TypeScript с применением ООП</li>
+                <li>Формирование эталонной архитектуры раздела «Эквайринг», принятой командой</li>
+                <li>Адаптация архитектуры при миграции Vue 2 → Vue 3 без остановки разработки</li>
+              </ul>
+            </article>
+            <article class="card competency-card">
+              <div class="competency-card__head">
+                <span class="competency-card__glow"></span>
+                <h3>Безопасность и аутентификация</h3>
+              </div>
+              <ul class="competency-card__list">
+                <li>Переработка механизма аутентификации и авторизации по требованиям ИБ</li>
+                <li>Исключение прямых обращений к Keycloak и wildcard redirect URI</li>
+                <li>Реализация токенной модели с локальным управлением сессией</li>
+                <li>Сервис синхронизации refresh-токенов при конкурентных запросах</li>
+              </ul>
+            </article>
+            <article class="card competency-card">
+              <div class="competency-card__head">
+                <span class="competency-card__glow"></span>
+                <h3>Frontend Engineering (Vue / TypeScript)</h3>
+              </div>
+              <ul class="competency-card__list">
+                <li>Vue 2 / Vue 3, Composition API, TypeScript</li>
+                <li>Проектирование масштабируемой структуры компонентов и слоёв</li>
+                <li>Унифицированная обработка ошибок, пагинация, поиск, валидация форм</li>
+                <li>Миграция legacy-кода с минимальными рисками</li>
+              </ul>
+            </article>
+            <article class="card competency-card">
+              <div class="competency-card__head">
+                <span class="competency-card__glow"></span>
+                <h3>Работа с бизнес-логикой</h3>
+              </div>
+              <ul class="competency-card__list">
+                <li>Реализация сложных расчётных сценариев (калькуляторы, премии, эквайринг)</li>
+                <li>Обеспечение корректности повторных расчётов и историчности данных</li>
+                <li>Повышение качества консультаций за счёт доступа к сохранённым данным</li>
+              </ul>
+            </article>
+            <article class="card competency-card">
+              <div class="competency-card__head">
+                <span class="competency-card__glow"></span>
+                <h3>Лидерство и командные процессы</h3>
+              </div>
+              <ul class="competency-card__list">
+                <li>Техническое лидерство в подпроекте с высокой сложностью</li>
+                <li>Проведение архитектурных обсуждений и согласование решений с командой</li>
+                <li>Выстраивание регулярного взаимодействия с бизнес-стороной</li>
+                <li>Документирование решений в Confluence</li>
+              </ul>
+            </article>
+            <article class="card competency-card">
+              <div class="competency-card__head">
+                <span class="competency-card__glow"></span>
+                <h3>Инженерная эффективность</h3>
+              </div>
+              <ul class="competency-card__list">
+                <li>Автоматизация командных процессов (scrum-poker в YouTrack)</li>
+                <li>Снижение стоимости изменений и объёма доработок</li>
+                <li>Ускорение разработки за счёт повторного использования архитектуры</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Проекты</h2>
+            <p class="section__subtitle">
+              Ключевые рабочие кейсы и результаты в СОВКОМБАНК ТЕХНОЛОГИИ.
+            </p>
+          </div>
+          <div class="grid projects">
+            <article class="card project">
+              <div class="card__label">Финансовый калькулятор</div>
+              <h3 class="card__title">Безопасная авторизация и устойчивость</h3>
+              <div class="tags">
+                <span>JWT</span><span>OAuth 2.0</span><span>Keycloak</span>
+                <span>RBAC</span><span>Sessions</span>
+              </div>
+              <ul class="card__list">
+                <li>Переработал механизм аутентификации и авторизации в соответствии с требованиями ИБ.</li>
+                <li>Исключил прямые обращения к Keycloak и wildcard-redirect URI.</li>
+                <li>Внедрил токенную модель и локальное управление сессией.</li>
+                <li>Реализовал сервис синхронизации refresh-токенов при конкурентных асинхронных запросах.</li>
+                <li>Снизил риски расхождения сессий под нагрузкой.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">Финансовый калькулятор</div>
+              <h3 class="card__title">Эквайринг и унифицированные процессы</h3>
+              <div class="tags">
+                <span>MVC</span><span>TypeScript</span><span>UX</span>
+                <span>Валидация</span><span>Поиск</span>
+              </div>
+              <ul class="card__list">
+                <li>Спроектировал архитектуру на TypeScript с ООП и MVC.</li>
+                <li>Внедрил единый обработчик ошибок и согласованные UX-паттерны.</li>
+                <li>Добавил пагинацию, поиск и валидацию по единому стандарту.</li>
+                <li>Архитектура принята командой как эталон и задокументирована.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">Калькулятор автокредитов</div>
+              <h3 class="card__title">Калькулятор премий и точные расчёты</h3>
+              <div class="tags">
+                <span>MVC</span><span>Безопасность</span><span>История</span>
+                <span>Точность</span>
+              </div>
+              <ul class="card__list">
+                <li>Спроектировал архитектуру раздела на MVC.</li>
+                <li>Реализовал просмотр, сохранение и безопасное редактирование.</li>
+                <li>Добавил доступ к истории сделок для повторных консультаций.</li>
+                <li>Повысил точность расчётов и консистентность результатов.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Архитектурные решения</h2>
+            <p class="section__subtitle">
+              Подходы, которые улучшили качество и масштабируемость продуктов.
+            </p>
+          </div>
+          <div class="grid projects">
+            <article class="card project">
+              <div class="card__label">Vue 2 → Vue 3</div>
+              <h3 class="card__title">Переход на Composition API и TypeScript</h3>
+              <ul class="card__list">
+                <li>Миграция без остановки разработки и потери темпа релизов.</li>
+                <li>Пересборка архитектуры компонентов и базовых модулей.</li>
+                <li>Повышение стабильности и поддерживаемости кода.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">Кредитные разделы</div>
+              <h3 class="card__title">Модульность и стандартизация ошибок</h3>
+              <ul class="card__list">
+                <li>Выстроил унифицированную обработку ошибок и статусов.</li>
+                <li>Сократил стоимость изменений за счёт повторного использования.</li>
+                <li>Создал основу для системного рефакторинга.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="leadership" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Лидерство и процессы</h2>
+            <p class="section__subtitle">
+              Техническое лидерство и улучшение командных практик.
+            </p>
+          </div>
+          <div class="grid projects">
+            <article class="card project">
+              <div class="card__label">Техлид</div>
+              <h3 class="card__title">Сложная бизнес-логика</h3>
+              <div class="tags">
+                <span>Tech Lead</span><span>Architecture</span>
+              </div>
+              <ul class="card__list">
+                <li>Сопровождал архитектурные решения и ключевые изменения.</li>
+                <li>Выстроил регулярную коммуникацию с бизнес-заказчиками.</li>
+                <li>Снизил количество архитектурных расхождений.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">Командные процессы</div>
+              <h3 class="card__title">Согласование архитектуры</h3>
+              <div class="tags">
+                <span>Architecture</span><span>Refactoring</span>
+              </div>
+              <ul class="card__list">
+                <li>Организовал рабочие встречи по архитектурным решениям.</li>
+                <li>Сформировал единый подход к архитектуре и рефакторингу.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">Автоматизация</div>
+              <h3 class="card__title">Poker-оценка в YouTrack</h3>
+              <div class="tags">
+                <span>YouTrack</span><span>Automatzation</span><span>Estimation</span>
+              </div>
+              <ul class="card__list">
+                <li>Разработал скрипт покер-оценки и автоматизировал сессии.</li>
+                <li>Повысил прозрачность планирования и скорость оценок.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Опыт работы</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Middle Frontend (Vue.js)</h3>
+                <span class="timeline__company">СОВКОМБАНК ТЕХНОЛОГИИ</span>
+                <span class="timeline__date">2025 — н.в.</span>
+                <ul>
+                  <li>
+                    Разработка высоконагруженных банковских систем и автоматизация
+                    бизнес-процессов кредитования.
+                  </li>
+                  <li>
+                    Проработка требований совместно с бизнес-заказчиками и роль
+                    технического лидера внутри команды.
+                  </li>
+                  <li>
+                    Архитектурные решения для модульных разделов и устойчивость
+                    под нагрузкой.
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Frontend-разработчик</h3>
+                <span class="timeline__company">ООО «Артмарк»</span>
+                <span class="timeline__date">2023 — 2024</span>
+                <ul>
+                  <li>Коммерческая web-платформа для покупки и отслеживания билетов.</li>
+                  <li>Frontend-разработка и проектирование UX-сценариев.</li>
+                  <li>Интеграция с backend API.</li>
+                  <li>Frontend-разработчик и UI/UX дизайнер (команда из 3 человек).</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Frontend-разработчик / UI-UX дизайнер</h3>
+                <span class="timeline__company">ООО «Ривьера-Н»</span>
+                <span class="timeline__date">2022 — 2023</span>
+                <ul>
+                  <li>Коммерческий проект с мобильным приложением и админ-панелью.</li>
+                  <li>Frontend-разработка и UX/UI-проектирование.</li>
+                  <li>Авторизация по SMS, запись на услуги, история сервисов.</li>
+                  <li>Frontend-разработчик и UI/UX дизайнер (команда из 3 человек).</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Образование</h2>
+            <p class="section__subtitle">
+              Новосибирский Государственный Университет.
+            </p>
+          </div>
+          <div class="grid projects">
+            <article class="card project">
+              <div class="card__label">НГУ</div>
+              <h3 class="card__title">Бакалавр ФИТ</h3>
+              <p class="card__text">Информатика и вычислительная техника</p>
+              <div class="tags">
+                <span>2021 — 2025</span>
+              </div>
+              <div class="tags tags--stack">
+                <span>Дискретная математика</span>
+                <span>Структуры данных</span>
+                <span>Алгоритмы</span>
+                <span>ООП</span>
+                <span>Операционные системы</span>
+                <span>Параллельное программирование</span>
+                <span>Функциональное программирование</span>
+                <span>Машинное обучение</span>
+                <span>Оптимизация на Java</span>
+                <span>Компьютерное моделирование</span>
+                <span>Проектирование ПО</span>
+                <span>Обработка/хранение данных</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="uni-projects" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Университетские проекты</h2>
+            <p class="section__subtitle">
+              Командные работы и прикладные решения.
+            </p>
+          </div>
+          <div class="grid projects">
+            <article class="card project">
+              <div class="card__label">BusBonus</div>
+              <h3 class="card__title">Платформа продажи и трекинга билетов</h3>
+              <div class="tags">
+                <span>Vue</span><span>JavaScript</span><span>WebStorm</span>
+              </div>
+              <p class="card__text">Октябрь 2023 — май 2024</p>
+              <ul class="card__list">
+                <li>Коммерческая web-платформа для оптимизации покупки и отслеживания межгородских билетов.</li>
+                <li>Роль: frontend-разработчик и UI/UX дизайнер в команде из 3 человек.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">TimeTable</div>
+              <h3 class="card__title">Система составления расписаний</h3>
+              <div class="tags">
+                <span>Vue</span><span>JavaScript</span><span>WebStorm</span>
+              </div>
+              <p class="card__text">Декабрь 2023 — май 2024</p>
+              <ul class="card__list">
+                <li>Командный университетский проект.</li>
+                <li>Система для преподавателей: упрощение создания расписаний.</li>
+                <li>Администратор ведёт преподавателей, аудитории, группы, учебные планы.</li>
+                <li>Преподаватели задают ограничения и предпочтения.</li>
+                <li>Администрация запускает алгоритм составления расписания (Python, SAT solver).</li>
+                <li>Все пользователи видят расписания по преподавателям, аудиториям и группам.</li>
+                <li>Роль: frontend-разработчик и UI/UX дизайнер в команде из 4 человек.</li>
+              </ul>
+            </article>
+            <article class="card project">
+              <div class="card__label">Автокомплекс Топаз</div>
+              <h3 class="card__title">Система бронирования услуг автокомплекса</h3>
+              <div class="tags">
+                <span>Jetpack Compose</span><span>Kotlin</span><span>Android Studio</span>
+              </div>
+              <p class="card__text">Октябрь 2022 — октябрь 2023</p>
+              <ul class="card__list">
+                <li>Командный коммерческий проект.</li>
+                <li>Система включает мобильное приложение, сайт администратора и сервер.</li>
+                <li>Авторизация/регистрация с подтверждением по SMS.</li>
+                <li>Просмотр услуг, акций и скидок для всех пользователей.</li>
+                <li>Запись на услуги и история сервисов для авторизованных пользователей.</li>
+                <li>Разработал сайт администратора для упрощения работы.</li>
+                <li>Роль: frontend-разработчик и UI/UX дизайнер в команде из 3 человек.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="section reveal">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Контакты</h2>
+            <p class="section__subtitle">
+              Открыт к новым проектам и партнёрствам.
+            </p>
+          </div>
+          <div class="grid contacts">
+            <a class="card contact" href="mailto:hello@example.com">
+              <span class="contact__label">Email</span>
+              <span class="contact__value">a.seleznev@alumni.nsu.ru</span>
+            </a>
+            <a class="card contact" href="https://github.com/username">
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">github.com/username</span>
+            </a>
+            <a class="card contact" href="https://t.me/username">
+              <span class="contact__label">Telegram</span>
+              <span class="contact__value">t.me/username</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Селезнев Алексей. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
