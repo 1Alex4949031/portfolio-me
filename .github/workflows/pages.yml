@@ -1,4 +1,4 @@
-name: Portfolio / Deploy static site to GitHub Pages
+name: Portfolio / Deploy Vue site to GitHub Pages
 
 on:
   push:
@@ -27,10 +27,31 @@ jobs:
         with:
           lfs: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build new site
+        run: npm run build
+
+      - name: Add legacy version
+        shell: bash
+        run: |
+          mkdir -p dist/legacy
+          cp legacy/index.html dist/legacy/index.html
+          cp legacy/styles.css dist/legacy/styles.css
+          cp legacy/script.js dist/legacy/script.js
+          if [ -d images ]; then cp -R images dist/images; fi
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
       - name: Deploy
         id: deployment
