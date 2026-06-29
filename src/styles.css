@@ -902,8 +902,8 @@ footer {
   .menu-button:hover,
   .menu-button:active,
   .menu-button[aria-expanded="true"] {
-    background: var(--paper);
-    color: var(--ink);
+    background: var(--ink);
+    color: var(--paper);
   }
 
   .menu-button span {
@@ -916,7 +916,7 @@ footer {
   .menu-button:hover span,
   .menu-button:active span,
   .menu-button[aria-expanded="true"] span {
-    background: var(--ink);
+    background: var(--paper);
   }
 
   .mobile-panel {
